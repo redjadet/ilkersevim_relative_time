@@ -3,6 +3,13 @@
 Short relative-time labels for chat-style timestamps (`3d`, `2h`, `5m`, `now`).
 Dependency-free beyond the Dart SDK.
 
+## Why use this package?
+
+- Keep compact timestamps consistent across chat, activity, and feed views.
+- Avoid adding a localization or date-formatting dependency for four short
+  relative labels.
+- Inject `now` for deterministic tests and server-aligned clocks.
+
 License: [Apache-2.0](LICENSE). Issues:
 [github.com/redjadet/ilkersevim_relative_time/issues](https://github.com/redjadet/ilkersevim_relative_time/issues).
 
@@ -10,7 +17,7 @@ License: [Apache-2.0](LICENSE). Issues:
 
 ```yaml
 dependencies:
-  ilkersevim_relative_time: ^0.1.0
+  ilkersevim_relative_time: ^0.1.2
 ```
 
 Requires Dart `>=3.12.0`.
