@@ -1,0 +1,18 @@
+name: ilkersevim_relative_time
+description: >-
+  Short relative-time labels for chat-style timestamps (e.g. 3d, 2h, now).
+version: 0.1.0
+repository: https://github.com/redjadet/ilkersevim_relative_time
+homepage: https://github.com/redjadet/ilkersevim_relative_time
+issue_tracker: https://github.com/redjadet/ilkersevim_relative_time/issues
+topics:
+  - datetime
+  - formatting
+  - dart
+
+environment:
+  sdk: '>=3.12.0 <4.0.0'
+
+dev_dependencies:
+  lints: ^6.1.0
+  test: ^1.31.0
