@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3
+
+- Future timestamps return `soon` instead of incorrectly labeling them `now`.
+
+
 ## 0.1.2
 
 - Explain where compact relative-time labels help and why the formatter stays

@@ -1,8 +1,14 @@
 /// Short relative-time labels for chat-style timestamps (e.g. `3d`, `2h`).
+///
+/// Future timestamps (clock skew / scheduled times) return `soon` instead of
+/// falsely labeling them `now`.
 String formatRelativeTimeShort(final DateTime time, {final DateTime? now}) {
   final DateTime reference = now ?? DateTime.now();
   final Duration difference = reference.difference(time);
 
+  if (difference.isNegative) {
+    return 'soon';
+  }
   if (difference.inDays > 0) {
     return '${difference.inDays}d';
   }
