@@ -34,5 +34,12 @@ void main() {
         'now',
       );
     });
+
+    test('returns soon for future timestamps instead of now', () {
+      expect(
+        formatRelativeTimeShort(now.add(const Duration(hours: 2)), now: now),
+        'soon',
+      );
+    });
   });
 }
