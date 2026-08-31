@@ -2,7 +2,7 @@
 ///
 /// Future timestamps (clock skew / scheduled times) return `soon` instead of
 /// falsely labeling them `now`.
-String formatRelativeTimeShort(final DateTime time, {final DateTime? now}) {
+String formatRelativeTimeShort(DateTime time, {DateTime? now}) {
   final DateTime reference = now ?? DateTime.now();
   final Duration difference = reference.difference(time);
 
