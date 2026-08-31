@@ -25,6 +25,16 @@ void main() {
       );
     });
 
+    test('returns minutes when difference is under one hour', () {
+      expect(
+        formatRelativeTimeShort(
+          now.subtract(const Duration(minutes: 5, seconds: 30)),
+          now: now,
+        ),
+        '5m',
+      );
+    });
+
     test('returns now when difference is under one minute', () {
       expect(
         formatRelativeTimeShort(
@@ -32,6 +42,16 @@ void main() {
           now: now,
         ),
         'now',
+      );
+    });
+
+    test('uses whole-day buckets before hours', () {
+      expect(
+        formatRelativeTimeShort(
+          now.subtract(const Duration(days: 1, hours: 5)),
+          now: now,
+        ),
+        '1d',
       );
     });
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.4
+
+- Document label rules, examples, and edge cases in README.
+- Add tests for minute labels and whole-day bucketing.
+- Sync README install caret with current release.
+
 ## 0.1.3
 
 - Future timestamps return `soon` instead of incorrectly labeling them `now`.
